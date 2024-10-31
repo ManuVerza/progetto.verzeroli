@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Template</title>
+
+    <meta name="description" content="Lite WebApp Template">
+    <meta name="author" content=""> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="currentColor">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- TODO Fallback ico and svg favicon 
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+
+    <style>
+
+      :root {
+        --text1: hsl(200, 65%, 15%);
+        --surface1: whitesmoke;
+      }
+
+      /* reset browser defaults */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        color-scheme: light;
+        min-block-size: 100vh;
+
+        /* base rem unit (10px) */
+        font-size: 62.5%;
+      }
+
+      html[data-theme="dark"] {
+        color-scheme: dark;
+      }
+
+      body  {
+        min-height: 100vh;
+        font-family: system-ui, sans-serif;
+        font-size: 1.9rem;
+        /* WCAG no less than 1.5 dyslexic */
+        line-height: 1.5;
+
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        min-height: 100vh;
+        width: 100%;
+
+        /* center content in section */
+        display: grid;
+        place-items: center;
+      }
+
+      .dark-1 {
+        background-color: #111;
+      }
+
+      .dark-3 {
+        background-color: #333;
+      }
+
+      .dark-5 {
+        background-color: #555;
+      }
+
+      .light-txt {
+        color: whitesmoke;
+      }
+      
+      /* Desktop layout */
+      @media only screen and (min-width: 933px) {
+
+        body {
+          /* 2 column layout for the body */
+          grid-template-columns: 1fr 1fr;
+        }
+
+      }
+      
+    </style>
+    
+  </head>
+
+  <body>
+
+    <section>
+      @SECTION-ONE
+    </section>
+    <section class="dark-5 light-txt">
+      @SECTION-TWO
+    </section>
+    <section class="dark-3 light-txt">
+      @SECTION-THREE
+    </section>
+    <section class="dark-1 light-txt">
+      @SECTION-FOUR
+    </section>
+
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+
+    <!-- Import Js Module -->
+    <script>
+
+      window.addEventListener('DOMContentLoaded', (e) => {
+        console.log('@DOM >> Ready')
+      })
+
+    </script>
+
+  </body>
+</html>
