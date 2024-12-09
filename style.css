@@ -1,0 +1,67 @@
+body{
+    font-family: 'Lexend Deca';
+    background-color: #F1F1F1;
+
+}
+
+
+
+
+.wrapper{
+    border-radius:18px;
+    box-shadow: 15px 15px 6px #cecece;
+    position: relative;
+    width: 300px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 50px;
+   
+}
+
+hr{
+    border-style: groove;
+    border-color: #cecece;
+}
+
+input[type="number"]{
+    font-family: 'Lexend Deca';
+}
+
+input[type="submit"] {
+    font-family: 'Lexend Deca';
+    background-color: #ADBBDA;
+    border-radius: 15px;
+  }
+
+input[type="submit"]:hover {
+    font-family: 'Lexend Deca';
+    background-color: #7091E6;
+  }
+
+#titolo{
+    color: #7091E6;
+}
+
+h3{
+    color: #7091E6;
+}
+
+#RAL{
+    border-radius: 15px; 
+     height: 25px; 
+     border-width: 2px; 
+     background-color: white; 
+     border-color: #3D52A0;
+}
+
+#inputFigli{
+    border-radius: 15px; 
+     height: 25px; 
+     border-width: 2px; 
+     background-color: white; 
+     border-color: #3D52A0;
+
+}
