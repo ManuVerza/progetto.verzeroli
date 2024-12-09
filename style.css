@@ -1,6 +1,8 @@
 body{
     font-family: 'Lexend Deca';
     background-color: #F1F1F1;
+    display: grid;
+    place-items: center;
 
 }
 
@@ -13,10 +15,6 @@ body{
     position: relative;
     width: 300px;
     background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
-    margin-bottom: 70px;
     padding: 50px;
    
 }
