@@ -1,4 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    height: 100vh;
     font-family: 'Lexend Deca';
     background-color: #F1F1F1;
     display: grid;
@@ -6,17 +12,13 @@ body{
 
 }
 
-
-
-
-.wrapper{
-    border-radius:18px;
-    box-shadow: 15px 15px 6px #cecece;
-    position: relative;
-    width: 300px;
+.wrapper {
+    width: 100%;
+    height: 100%;
     background-color: white;
-    padding: 50px;
-   
+
+    display: grid;
+    
 }
 
 hr{
@@ -62,4 +64,16 @@ h3{
      background-color: white; 
      border-color: #3D52A0;
 
+}
+
+@media only screen and (min-width: 601px){
+    
+    .wrapper {
+        width: 300px;
+        height: 521px;
+        border-radius:18px;
+        box-shadow: 15px 15px 6px #cecece;
+        padding: 50px;
+    }
+    
 }
