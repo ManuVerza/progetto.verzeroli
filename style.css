@@ -1,38 +1,18 @@
-.navbar {
-    width: 100%;
-    height: 40px;
-    background-color: rgba(211, 211, 211);
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-.navbar .logo img {
-    height: 40px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.navbar .auth-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
-}
-.navbar .auth-buttons button {
-    background-color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    color: #3D52A0;
-    transition: 0.3s;
-}
+body {
+    /* background-color: #F1F1F1;
+    background-image: url(Assets/img/sfondo.jpg); */
+    background: red;
 
-.navbar .auth-buttons button:hover {
-    background-color: #7091E6;
-    color: white;
+    height: 100vh;
+    font-family: 'Lexend Deca', Arial, sans-serif;;
+    
+    display: grid;
+    place-items: center;
 }
 
 /* Spazio per il contenuto sotto la navbar */
@@ -41,20 +21,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url(Assets/img/sfondo.jpg);
-}
-.container {
+/* .container {
     position: relative;
     width: 100%;
     height: 100vh;
-}.menu {
+}
+
+.menu {
     position: absolute;
     top: 0;
     right: 0;
@@ -120,19 +96,6 @@ body {
     background: gray;
     color: white;
 }
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    height: 100vh;
-    font-family: 'Lexend Deca';
-    background-color: #F1F1F1;
-    display: grid;
-    place-items: center;
-
-}
 
 
 hr{
@@ -180,6 +143,23 @@ h3{
 
 }
 
+.icon svg {
+    width: 55px;
+    height: 55px;
+    fill:red;
+
+}
+
+#btnLogin{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 3;
+    width: 55px;
+    height: 55px;
+
+}
+
 @media only screen and (min-width: 601px){
     
     .wrapper {
@@ -190,4 +170,4 @@ h3{
         padding: 50px;
     }
     
-}
+} */
