@@ -102,9 +102,6 @@ if (isset($_POST['index'])) {
 }
 
 
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -121,92 +118,81 @@ if (isset($_POST['index'])) {
 <!--------------------------------------------------------------------->
 
 <body>
-    <!-- Navbar
-    <div class="navbar">
-        <div class="logo">
-            <img src="Assets/img/logo.png" alt="Logo">
-        </div>
-        <div class="auth-buttons">
-            <a href="login.php">
-                <button type="submit" name="login">Login</button>
-            </a>
-        </div>
 
-    </div>
-     -->
     <button class="icon" id="btnLogin">
-
-        </svg>
-
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+        <path d="M480-492.31q-57.75 0-98.87-41.12Q340-574.56 340-632.31q0-57.75 41.13-98.87 41.12-41.13 98.87-41.13 57.75 0 98.87 41.13Q620-690.06 620-632.31q0 57.75-41.13 98.88-41.12 41.12-98.87 41.12ZM180-187.69v-88.93q0-29.38 15.96-54.42 15.96-25.04 42.66-38.5 59.3-29.07 119.65-43.61 60.35-14.54 121.73-14.54t121.73 14.54q60.35 14.54 119.65 43.61 26.7 13.46 42.66 38.5Q780-306 780-276.62v88.93H180Zm60-60h480v-28.93q0-12.15-7.04-22.5-7.04-10.34-19.11-16.88-51.7-25.46-105.42-38.58Q534.7-367.69 480-367.69q-54.7 0-108.43 13.11-53.72 13.12-105.42 38.58-12.07 6.54-19.11 16.88-7.04 10.35-7.04 22.5v28.93Zm240-304.62q33 0 56.5-23.5t23.5-56.5q0-33-23.5-56.5t-56.5-23.5q-33 0-56.5 23.5t-23.5 56.5q0 33 23.5 56.5t56.5 23.5Zm0-80Zm0 384.62Z"/>
+    </svg>
     </button>
-    <div class="container">
-        <div class="content">
-        </div>
-    </div>
-    <div class="menu">
-        <div class="wrapper">
-            <h1 id="titolo">Calcolatore Tasse</h1>
-            <div id="userInput">
-                <form method="post" action="index.php" class="userInput" name="index">
-                    <label for="RAL">Reddito Annuo Lordo (€):</label><br>
-                    <input type="number" name="reddito" id="RAL" min="0" required><br><br>
 
-                    <legend>Seleziona il numero di mensilità:</legend>
-
-                    <input type="radio" name="mensilita" id="men12" value="12" required>
-                    <label for="men12">12</label><br>
-
-                    <input type="radio" name="mensilita" id="men13" value="13">
-                    <label for="men13">13</label><br>
-
-                    <input type="radio" name="mensilita" id="men14" value="14">
-                    <label for="men14">14</label><br><br>
-
-                    <legend>Seleziona la regione:</legend>
-
-                    <input type="radio" name="regione" id="regGrif" value="Grifondoro" required>
-                    <label for="regGrif">Grifondoro</label><br>
-
-                    <input type="radio" name="regione" id="regSer" value="Serpeverde">
-                    <label for="regSer">Serpeverde</label><br>
-
-                    <input type="radio" name="regione" id="regCor" value="Corvonero">
-                    <label for="regCor">Corvonero</label><br>
-
-                    <input type="radio" name="regione" id="regTas" value="Tassorosso">
-                    <label for="regTas">Tassorosso</label><br><br>
-
-                    <label for="inputFigli">Inserire num. figli: </label><br>
-                    <input type="number" name="figli" id="inputFigli" min="0" required><br><br>
-
-                    <input type="submit" value="Calcola" id="submit" name="index">
-                    <a href="?reset=true">Reset</a>
-
-                </form>
-
-                <div id="risultati">
-                    <h3>Risultati:</h3>
-                    <p id="risultati1">
-                        <?php
-                        if (isset($_POST["index"])) {
-                            echo "da pagare= $importoPagare";
-                        }
-                        ?>
-                    </p>
-                    <!----CAMPO IMPORTO DA PAGARE---->
-                    <p id="risultati2">
-                        <?php
-                        if (isset($_POST["index"])) {
-                            echo "soldi rimanenti= $netto";
-                        }
-                        ?>
-                    </p> <!----CAMPO SOLDI RIMANENTI (NETTO)---->
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="risultati">
+        <h3>Risultati:</h3>
+        <p id="risultati1">
+            <?php
+            if (isset($_POST["index"])) {
+                echo "da pagare= $importoPagare";
+            }
+            ?>
+        </p>
+        <!----CAMPO IMPORTO DA PAGARE---->
+        <p id="risultati2">
+            <?php
+            if (isset($_POST["index"])) {
+                echo "soldi rimanenti= $netto";
+            }
+            ?>
+        </p> <!----CAMPO SOLDI RIMANENTI (NETTO)---->
     </div>
 
+    <div class="wrapper">
+        <h1 id="titolo">Calcolatore Tasse</h1>
+        <form method="post" action="index.php" name="index">
+            <label for="RAL">Reddito Annuo Lordo (€):</label><br>
+            <input type="number" name="reddito" id="RAL" min="0" required><br><br>
+
+            <legend>Seleziona il numero di mensilità:</legend>
+
+            <input type="radio" name="mensilita" id="men12" value="12" required>
+            <label for="men12">12</label><br>
+
+            <input type="radio" name="mensilita" id="men13" value="13">
+            <label for="men13">13</label><br>
+
+            <input type="radio" name="mensilita" id="men14" value="14">
+            <label for="men14">14</label><br><br>
+
+            <legend>Seleziona la regione:</legend>
+
+            <input type="radio" name="regione" id="regGrif" value="Grifondoro" required>
+            <label for="regGrif">Grifondoro</label><br>
+
+            <input type="radio" name="regione" id="regSer" value="Serpeverde">
+            <label for="regSer">Serpeverde</label><br>
+
+            <input type="radio" name="regione" id="regCor" value="Corvonero">
+            <label for="regCor">Corvonero</label><br>
+
+            <input type="radio" name="regione" id="regTas" value="Tassorosso">
+            <label for="regTas">Tassorosso</label><br><br>
+
+            <label for="inputFigli">Inserire num. figli: </label><br>
+            <input type="number" name="figli" id="inputFigli" min="0" required><br><br>
+
+            <input type="submit" value="Calcola" id="submit" name="index">
+            <a href="?reset=true">Reset</a>
+
+        </form>
+        
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const version = '1.2.0'
+
+            console.log('@VERSION: ', version)
+
+        })
+    </script>
 
 </body>
 

@@ -1,54 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    /* background-color: #F1F1F1;
-    background-image: url(Assets/img/sfondo.jpg); */
-    background: red;
+    background-color: #F1F1F1;
+    background-image: url(Assets/img/ai_bk.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    width: 100%;
     height: 100vh;
     font-family: 'Lexend Deca', Arial, sans-serif;;
     
     display: grid;
     place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-/* Spazio per il contenuto sotto la navbar */
- .content-container {
-    margin-top: 80px; /* Per evitare che il contenuto venga coperto dalla navbar */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
+button {
+    border: none;
+    background: none;
+    color: inherit;
+    outline: inherit;
+    /* line-height: 0; */
 
-/* .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
+    font-family: inherit;
 
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    background-color: rgba(153, 167, 161, 0.867);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    cursor: pointer;
+
+    /* no double tap so go fast */
+    touch-action: manipulation;
+    z-index: 7;
+  }
 
 .wrapper {
-    width: 300px;
-    height: 521px;
-    background-color: white;
-    border-radius: 18px;
-    box-shadow: 15px 15px 6px #cecece;
-    padding: 50px;
+    padding: 4rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 3px 3px 1px #cecece;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,11 +113,11 @@ input[type="submit"]:hover {
     background-color: #7091E6;
 }
 
-#titolo{
+h1 {
     color: #7091E6;
 }
 
-h3{
+h3 {
     color: #7091E6;
 }
 
@@ -146,7 +141,7 @@ h3{
 .icon svg {
     width: 55px;
     height: 55px;
-    fill:red;
+    fill: whitesmoke;
 
 }
 
@@ -158,16 +153,18 @@ h3{
     width: 55px;
     height: 55px;
 
+    background: none;
+
 }
 
 @media only screen and (min-width: 601px){
-    
-    .wrapper {
-        width: 300px;
-        height: 521px;
-        border-radius:18px;
-        box-shadow: 15px 15px 6px #cecece;
-        padding: 50px;
+
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     
-} */
+    .wrapper {
+    }
+    
+}
