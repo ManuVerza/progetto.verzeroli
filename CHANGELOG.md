@@ -1,5 +1,10 @@
 # Changing
 
+## v1.2.1 [07/04/2025]
+
+### Changed
+  - Fix layout
+
 ## v1.2.0 [02/04/2025]
 
 ### Changed
