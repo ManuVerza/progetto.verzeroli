@@ -1,12 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #F1F1F1;
+    background-image: url(Assets/img/ai_bk.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lexend Deca', Arial, sans-serif;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
 h2 {

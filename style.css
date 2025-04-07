@@ -1,3 +1,50 @@
+/* Stile del pulsante */ 
+#menuButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Stile del menu a tendina */
+.dropdown {
+    position: absolute;
+    top: 50px;
+    right: 20px; /* Menu posizionato sulla destra */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Link nel menu */
+.dropdown a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Classe nascosta */
+.hidden {
+    display: none;
+}
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -154,6 +201,7 @@ h3 {
     height: 55px;
 
     background: none;
+    cursor: pointer;
 
 }
 

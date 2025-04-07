@@ -1,0 +1,6 @@
+Reddito: 10000 | Mensilità: 12 | Regione: Grifondoro | Figli: 1 | Da pagare: 600 | Netto: 9400
+121022|12|Grifondoro|1|31929.24|89092.76
+1511551|12|Grifondoro|1|615951.42|895599.58
+13334|12|Grifondoro|1|800.04|12533.96
+13334|12|Grifondoro|1|800.04|12533.96
+13333|12|Grifondoro|1|799.98|12533.02

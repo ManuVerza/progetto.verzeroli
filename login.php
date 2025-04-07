@@ -11,13 +11,17 @@ if (isset($_POST['login'])) {
             if ($storedUser == $username && password_verify($password, $storedPassword)) {
                 $_SESSION['username'] = $username;
                 fclose($file);
-                header("Location: index.html");
+                header("Location: index.php");
                 exit;
+            }else{
+                $_SESSION["messaggio"] = "Credenziali errate";
+                header("Location: ".$_SERVER['PHP_SELF']);
+                exit();
             }
         }
         fclose($file);
     }
-    echo "<p>Credenziali errate.</p>";
+    
 }
 
 ?>
@@ -27,16 +31,20 @@ if (isset($_POST['login'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="styleLogin.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" rel="stylesheet">
+  
 
 </head>
 
 <body>
     <div class="container">
+        <?php
+        if (isset($_SESSION['messaggio'])){
+            echo"<p> ".$_SESSION['messaggio']."</p>";
+            unset($_SESSION["messaggio"]);
+        }
+        ?>
         <h2>Login</h2>
         <form method="post">
             <input type="text" name="username" placeholder="Nome utente" required>

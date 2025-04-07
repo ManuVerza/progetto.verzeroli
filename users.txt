@@ -1,1 +1,12 @@
 
+manuel|$2y$10$OwblocifcHYIEtJZg2Oa0uZqd9jzVWPUb1MuF0gwhqVFBb69TW8pi
+manue|$2y$10$RY6uA3A/TYnX983u/c7cG.fv9o6t2ja70LqfSBIH5eB.nBH3TAPuS
+admin|$2y$10$TBaFuLS0lM52p2EpeVvXwuJCNQ7jZkh5sECsKYL0b9wYQKCQLCBZa
+2|$2y$10$HA4Oqgg7F57Emdkqh6KeV.cIBnkJh2TzTa93GUyC2qBjN6vnkw4mq
+133|$2y$10$j03rVKSOEsJ3dNDYKenvPOJi/uUjwR2s2yDkjhRc8J8YeP2jvWL0.
+13244|$2y$10$LJa8f0Qjg9aDA/Gg/Etwie8twpLg375QwgJvGm7qyNdnugrdh9dPi
+cisco|$2y$10$pDbzD7qaOay9NCUX6EHJe.2oMKkr0Eex8qodYF/S1ULNwxYG0JOjK
+manuel12|$2y$10$1FsOwZu7MyD/K0VmbBW9be/tAXInJ4yK/YKcepq3hYveu2Njm4kv2
+resyta|$2y$10$q8DeCTor/NvO3nKLedXEkeOSuu0EXh0hzcxWScflLe9zJrMrRdobG
+aci|$2y$10$U6KqhzbiU2w1V5qFFbsHUOl2m3hFHfgehTF/fxgFubuaaW/ttbs4G
+verza|$2y$10$O4HyvLQQWo/fHJQ0grEN8.dNqG.QEbh8g4AZpQJhKa7iAbl9EKBpG
